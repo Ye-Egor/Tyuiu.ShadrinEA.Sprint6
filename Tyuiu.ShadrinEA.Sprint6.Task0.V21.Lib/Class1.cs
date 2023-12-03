@@ -16,4 +16,4 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task0.V21.Lib
             return Math.Round(res, 3);
         }
     }
-}
+} 
