@@ -45,7 +45,12 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task0.V21
 
         private void buttonWhat_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("ййййййййййй", "ййййййййййй", MessageBoxButtons.OK);
+            MessageBox.Show("Task0 выполнил студент группы ИСТНб-23-1 Шадрин Егор Андреевич", "Сообщение", MessageBoxButtons.OK);
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

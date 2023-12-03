@@ -38,6 +38,8 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task0.V21
             this.textBoxRes = new System.Windows.Forms.TextBox();
             this.buttonDone = new System.Windows.Forms.Button();
             this.buttonWhat = new System.Windows.Forms.Button();
+            this.textBox = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBoxTaskk.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxVar.SuspendLayout();
@@ -58,7 +60,7 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task0.V21
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Tyuiu.ShadrinEA.Sprint6.Task0.V21.Properties.Resources.Tasko;
-            this.pictureBox1.Location = new System.Drawing.Point(482, 134);
+            this.pictureBox1.Location = new System.Drawing.Point(482, 19);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(288, 44);
             this.pictureBox1.TabIndex = 1;
@@ -69,15 +71,17 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task0.V21
             this.textBoxTask.Location = new System.Drawing.Point(6, 19);
             this.textBoxTask.Multiline = true;
             this.textBoxTask.Name = "textBoxTask";
+            this.textBoxTask.ReadOnly = true;
             this.textBoxTask.Size = new System.Drawing.Size(470, 159);
             this.textBoxTask.TabIndex = 0;
             // 
             // groupBoxVar
             // 
+            this.groupBoxVar.Controls.Add(this.textBox);
             this.groupBoxVar.Controls.Add(this.textBoxVarA);
             this.groupBoxVar.Location = new System.Drawing.Point(18, 202);
             this.groupBoxVar.Name = "groupBoxVar";
-            this.groupBoxVar.Size = new System.Drawing.Size(236, 100);
+            this.groupBoxVar.Size = new System.Drawing.Size(236, 81);
             this.groupBoxVar.TabIndex = 1;
             this.groupBoxVar.TabStop = false;
             this.groupBoxVar.Text = "Ввод данных";
@@ -91,26 +95,30 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task0.V21
             // 
             // groupBoxRess
             // 
+            this.groupBoxRess.Controls.Add(this.textBox1);
             this.groupBoxRess.Controls.Add(this.textBoxRes);
             this.groupBoxRess.Location = new System.Drawing.Point(260, 203);
             this.groupBoxRess.Name = "groupBoxRess";
-            this.groupBoxRess.Size = new System.Drawing.Size(228, 99);
+            this.groupBoxRess.Size = new System.Drawing.Size(228, 80);
             this.groupBoxRess.TabIndex = 2;
             this.groupBoxRess.TabStop = false;
             this.groupBoxRess.Text = "Вывод данных";
             // 
             // textBoxRes
             // 
+            this.textBoxRes.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxRes.Location = new System.Drawing.Point(6, 47);
             this.textBoxRes.Name = "textBoxRes";
+            this.textBoxRes.ReadOnly = true;
             this.textBoxRes.Size = new System.Drawing.Size(216, 20);
             this.textBoxRes.TabIndex = 0;
             // 
             // buttonDone
             // 
-            this.buttonDone.Location = new System.Drawing.Point(559, 236);
+            this.buttonDone.ForeColor = System.Drawing.Color.Black;
+            this.buttonDone.Location = new System.Drawing.Point(559, 226);
             this.buttonDone.Name = "buttonDone";
-            this.buttonDone.Size = new System.Drawing.Size(223, 47);
+            this.buttonDone.Size = new System.Drawing.Size(229, 44);
             this.buttonDone.TabIndex = 3;
             this.buttonDone.Text = "Выполнить";
             this.buttonDone.UseVisualStyleBackColor = true;
@@ -118,13 +126,41 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task0.V21
             // 
             // buttonWhat
             // 
-            this.buttonWhat.Location = new System.Drawing.Point(494, 236);
+            this.buttonWhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonWhat.Location = new System.Drawing.Point(494, 226);
             this.buttonWhat.Name = "buttonWhat";
-            this.buttonWhat.Size = new System.Drawing.Size(59, 44);
+            this.buttonWhat.Size = new System.Drawing.Size(65, 44);
             this.buttonWhat.TabIndex = 4;
             this.buttonWhat.Text = "?";
             this.buttonWhat.UseVisualStyleBackColor = true;
             this.buttonWhat.Click += new System.EventHandler(this.buttonWhat_Click);
+            // 
+            // textBox
+            // 
+            this.textBox.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.textBox.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox.Enabled = false;
+            this.textBox.Location = new System.Drawing.Point(6, 22);
+            this.textBox.Name = "textBox";
+            this.textBox.ReadOnly = true;
+            this.textBox.Size = new System.Drawing.Size(100, 13);
+            this.textBox.TabIndex = 1;
+            this.textBox.Text = "Переменная Х:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(6, 21);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(100, 13);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.Text = "Результат:";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // FormMain
             // 
@@ -136,7 +172,10 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task0.V21
             this.Controls.Add(this.groupBoxRess);
             this.Controls.Add(this.groupBoxVar);
             this.Controls.Add(this.groupBoxTaskk);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MinimizeBox = false;
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6  | Task 0 | Вариант 21 | Шадрин Е.А";
             this.groupBoxTaskk.ResumeLayout(false);
             this.groupBoxTaskk.PerformLayout();
@@ -159,6 +198,8 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task0.V21
         private System.Windows.Forms.TextBox textBoxVarA;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonDone;
+        private System.Windows.Forms.TextBox textBox;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button buttonWhat;
     }
 }
