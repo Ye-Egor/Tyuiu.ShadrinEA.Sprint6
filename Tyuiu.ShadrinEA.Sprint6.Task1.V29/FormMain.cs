@@ -76,7 +76,7 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task1.V29
 
         private void buttonHelp_GAM_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("Task1 выполнил студент группы ИСТНб-23-1 Шадрин Егор Андреевич", "Сообщение", MessageBoxButtons.OK);
+            MessageBox.Show("Task1 выполнил студент группы ИСТНб-23-1 Шадрин Егор Андреевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
