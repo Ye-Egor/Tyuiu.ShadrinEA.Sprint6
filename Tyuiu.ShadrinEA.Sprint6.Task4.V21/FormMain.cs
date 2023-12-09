@@ -86,5 +86,10 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task4.V21
         {
 
         }
+
+        private void panelOunPut_SEA_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
