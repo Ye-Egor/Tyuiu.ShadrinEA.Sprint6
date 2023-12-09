@@ -15,8 +15,7 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task4.V21
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMain());
+            Application.SetCompatibleTextRenderingDefault(false); 
         }
     }
 }
