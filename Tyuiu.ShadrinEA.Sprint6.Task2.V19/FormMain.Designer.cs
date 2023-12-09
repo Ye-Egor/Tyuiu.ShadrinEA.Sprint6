@@ -258,7 +258,7 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task2.V19
         private System.Windows.Forms.DataVisualization.Charting.Chart chartResult_SEA;
         private System.Windows.Forms.Label labelResult_SEA;
         private System.Windows.Forms.DataGridView dataGridViewFunction_SEA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn X_GAM;
+        private System.Windows.Forms.DataGridViewTextBoxColumn X_SEA;
         private System.Windows.Forms.DataGridViewTextBoxColumn F_GAM;
         private System.Windows.Forms.Button buttonDone_SEA;
         private System.Windows.Forms.Button buttonHelp_SEA;
