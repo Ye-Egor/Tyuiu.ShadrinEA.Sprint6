@@ -29,10 +29,10 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task4.V21
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panelOunPut_SEA = new System.Windows.Forms.Panel();
             this.buttonSave_SEA = new System.Windows.Forms.Button();
             this.buttonHelp_SEA = new System.Windows.Forms.Button();
@@ -219,24 +219,24 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task4.V21
             // 
             // chartRes_SEA
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartRes_SEA.ChartAreas.Add(chartArea4);
+            chartArea5.Name = "ChartArea1";
+            this.chartRes_SEA.ChartAreas.Add(chartArea5);
             this.chartRes_SEA.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend4.Name = "Legend1";
-            this.chartRes_SEA.Legends.Add(legend4);
+            legend5.Name = "Legend1";
+            this.chartRes_SEA.Legends.Add(legend5);
             this.chartRes_SEA.Location = new System.Drawing.Point(0, 0);
             this.chartRes_SEA.Name = "chartRes_SEA";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chartRes_SEA.Series.Add(series4);
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            this.chartRes_SEA.Series.Add(series5);
             this.chartRes_SEA.Size = new System.Drawing.Size(637, 334);
             this.chartRes_SEA.TabIndex = 0;
             this.chartRes_SEA.Text = "chart1";
-            title4.Name = "Title1";
-            title4.Text = "График функции F(x)";
-            this.chartRes_SEA.Titles.Add(title4);
+            title5.Name = "Title1";
+            title5.Text = "График функции F(x)";
+            this.chartRes_SEA.Titles.Add(title5);
             this.chartRes_SEA.Click += new System.EventHandler(this.chartRes_SEA_Click);
             // 
             // splitter1
@@ -259,7 +259,7 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task4.V21
             this.MinimumSize = new System.Drawing.Size(800, 450);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Спринт 6  | Task 4 | Вариант 21 | Шадрин Е.А";
             this.panelOunPut_SEA.ResumeLayout(false);
             this.groupBoxInput_SEA.ResumeLayout(false);
             this.groupBoxInput_SEA.PerformLayout();
