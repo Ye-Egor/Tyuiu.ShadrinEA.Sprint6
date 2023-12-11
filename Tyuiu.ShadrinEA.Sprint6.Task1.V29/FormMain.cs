@@ -22,7 +22,7 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task1.V29
 
         private void buttonDone_GAM_Click(object sender, EventArgs e)
         {
-            try
+            try  
             {
                 int startValue = Convert.ToInt32(textBoxStartValue_SEA.Text);
                 int stopValue = Convert.ToInt32(textBoxStopValue_SEA.Text);
