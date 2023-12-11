@@ -29,178 +29,180 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task0.V21
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBoxTaskk = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBoxTask = new System.Windows.Forms.TextBox();
-            this.groupBoxVar = new System.Windows.Forms.GroupBox();
-            this.textBoxVarA = new System.Windows.Forms.TextBox();
-            this.groupBoxRess = new System.Windows.Forms.GroupBox();
-            this.textBoxRes = new System.Windows.Forms.TextBox();
-            this.buttonDone = new System.Windows.Forms.Button();
-            this.buttonWhat = new System.Windows.Forms.Button();
-            this.textBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBoxTaskk.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBoxVar.SuspendLayout();
-            this.groupBoxRess.SuspendLayout();
+            this.groupBoxTask_SEA = new System.Windows.Forms.GroupBox();
+            this.pictureBoxForm_SEA = new System.Windows.Forms.PictureBox();
+            this.textBoxTask_SEA = new System.Windows.Forms.TextBox();
+            this.groupBoxVar_SEA = new System.Windows.Forms.GroupBox();
+            this.textBoxSEA = new System.Windows.Forms.TextBox();
+            this.textBoxVarA_SEA = new System.Windows.Forms.TextBox();
+            this.groupBoxRess_SEA = new System.Windows.Forms.GroupBox();
+            this.textBox1SEA = new System.Windows.Forms.TextBox();
+            this.textBoxRes_SEA = new System.Windows.Forms.TextBox();
+            this.buttonDone_SEA = new System.Windows.Forms.Button();
+            this.buttonWhat_SEA = new System.Windows.Forms.Button();
+            this.groupBoxTask_SEA.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForm_SEA)).BeginInit();
+            this.groupBoxVar_SEA.SuspendLayout();
+            this.groupBoxRess_SEA.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBoxTaskk
+            // groupBoxTask_SEA
             // 
-            this.groupBoxTaskk.Controls.Add(this.pictureBox1);
-            this.groupBoxTaskk.Controls.Add(this.textBoxTask);
-            this.groupBoxTaskk.Location = new System.Drawing.Point(12, 12);
-            this.groupBoxTaskk.Name = "groupBoxTaskk";
-            this.groupBoxTaskk.Size = new System.Drawing.Size(776, 184);
-            this.groupBoxTaskk.TabIndex = 0;
-            this.groupBoxTaskk.TabStop = false;
-            this.groupBoxTaskk.Text = "Условие";
+            this.groupBoxTask_SEA.Controls.Add(this.pictureBoxForm_SEA);
+            this.groupBoxTask_SEA.Controls.Add(this.textBoxTask_SEA);
+            this.groupBoxTask_SEA.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxTask_SEA.Name = "groupBoxTask_SEA";
+            this.groupBoxTask_SEA.Size = new System.Drawing.Size(696, 91);
+            this.groupBoxTask_SEA.TabIndex = 0;
+            this.groupBoxTask_SEA.TabStop = false;
+            this.groupBoxTask_SEA.Text = "Условие";
             // 
-            // pictureBox1
+            // pictureBoxForm_SEA
             // 
-            this.pictureBox1.Image = global::Tyuiu.ShadrinEA.Sprint6.Task0.V21.Properties.Resources.Tasko;
-            this.pictureBox1.Location = new System.Drawing.Point(482, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(288, 44);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxForm_SEA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBoxForm_SEA.Image = global::Tyuiu.ShadrinEA.Sprint6.Task0.V21.Properties.Resources.Tasko;
+            this.pictureBoxForm_SEA.Location = new System.Drawing.Point(400, 19);
+            this.pictureBoxForm_SEA.Name = "pictureBoxForm_SEA";
+            this.pictureBoxForm_SEA.Size = new System.Drawing.Size(288, 56);
+            this.pictureBoxForm_SEA.TabIndex = 1;
+            this.pictureBoxForm_SEA.TabStop = false;
             // 
-            // textBoxTask
+            // textBoxTask_SEA
             // 
-            this.textBoxTask.Location = new System.Drawing.Point(6, 19);
-            this.textBoxTask.Multiline = true;
-            this.textBoxTask.Name = "textBoxTask";
-            this.textBoxTask.ReadOnly = true;
-            this.textBoxTask.Size = new System.Drawing.Size(470, 159);
-            this.textBoxTask.TabIndex = 0;
+            this.textBoxTask_SEA.Location = new System.Drawing.Point(6, 19);
+            this.textBoxTask_SEA.Multiline = true;
+            this.textBoxTask_SEA.Name = "textBoxTask_SEA";
+            this.textBoxTask_SEA.ReadOnly = true;
+            this.textBoxTask_SEA.Size = new System.Drawing.Size(388, 56);
+            this.textBoxTask_SEA.TabIndex = 0;
+            this.textBoxTask_SEA.Text = "Вычислить выражение по формуле";
             // 
-            // groupBoxVar
+            // groupBoxVar_SEA
             // 
-            this.groupBoxVar.Controls.Add(this.textBox);
-            this.groupBoxVar.Controls.Add(this.textBoxVarA);
-            this.groupBoxVar.Location = new System.Drawing.Point(18, 202);
-            this.groupBoxVar.Name = "groupBoxVar";
-            this.groupBoxVar.Size = new System.Drawing.Size(236, 81);
-            this.groupBoxVar.TabIndex = 1;
-            this.groupBoxVar.TabStop = false;
-            this.groupBoxVar.Text = "Ввод данных";
+            this.groupBoxVar_SEA.Controls.Add(this.textBoxSEA);
+            this.groupBoxVar_SEA.Controls.Add(this.textBoxVarA_SEA);
+            this.groupBoxVar_SEA.Location = new System.Drawing.Point(12, 108);
+            this.groupBoxVar_SEA.Name = "groupBoxVar_SEA";
+            this.groupBoxVar_SEA.Size = new System.Drawing.Size(236, 81);
+            this.groupBoxVar_SEA.TabIndex = 1;
+            this.groupBoxVar_SEA.TabStop = false;
+            this.groupBoxVar_SEA.Text = "Ввод данных";
             // 
-            // textBoxVarA
+            // textBoxSEA
             // 
-            this.textBoxVarA.Location = new System.Drawing.Point(6, 48);
-            this.textBoxVarA.Name = "textBoxVarA";
-            this.textBoxVarA.Size = new System.Drawing.Size(224, 20);
-            this.textBoxVarA.TabIndex = 3;
+            this.textBoxSEA.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.textBoxSEA.BackColor = System.Drawing.SystemColors.Control;
+            this.textBoxSEA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxSEA.Enabled = false;
+            this.textBoxSEA.Location = new System.Drawing.Point(6, 22);
+            this.textBoxSEA.Name = "textBoxSEA";
+            this.textBoxSEA.ReadOnly = true;
+            this.textBoxSEA.Size = new System.Drawing.Size(100, 13);
+            this.textBoxSEA.TabIndex = 1;
+            this.textBoxSEA.Text = "Переменная Х:";
             // 
-            // groupBoxRess
+            // textBoxVarA_SEA
             // 
-            this.groupBoxRess.Controls.Add(this.textBox1);
-            this.groupBoxRess.Controls.Add(this.textBoxRes);
-            this.groupBoxRess.Location = new System.Drawing.Point(260, 203);
-            this.groupBoxRess.Name = "groupBoxRess";
-            this.groupBoxRess.Size = new System.Drawing.Size(228, 80);
-            this.groupBoxRess.TabIndex = 2;
-            this.groupBoxRess.TabStop = false;
-            this.groupBoxRess.Text = "Вывод данных";
+            this.textBoxVarA_SEA.Location = new System.Drawing.Point(6, 48);
+            this.textBoxVarA_SEA.Name = "textBoxVarA_SEA";
+            this.textBoxVarA_SEA.Size = new System.Drawing.Size(224, 20);
+            this.textBoxVarA_SEA.TabIndex = 3;
             // 
-            // textBoxRes
+            // groupBoxRess_SEA
             // 
-            this.textBoxRes.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxRes.Location = new System.Drawing.Point(6, 47);
-            this.textBoxRes.Name = "textBoxRes";
-            this.textBoxRes.ReadOnly = true;
-            this.textBoxRes.Size = new System.Drawing.Size(216, 20);
-            this.textBoxRes.TabIndex = 0;
+            this.groupBoxRess_SEA.Controls.Add(this.textBox1SEA);
+            this.groupBoxRess_SEA.Controls.Add(this.textBoxRes_SEA);
+            this.groupBoxRess_SEA.Location = new System.Drawing.Point(254, 109);
+            this.groupBoxRess_SEA.Name = "groupBoxRess_SEA";
+            this.groupBoxRess_SEA.Size = new System.Drawing.Size(228, 80);
+            this.groupBoxRess_SEA.TabIndex = 2;
+            this.groupBoxRess_SEA.TabStop = false;
+            this.groupBoxRess_SEA.Text = "Вывод данных";
             // 
-            // buttonDone
+            // textBox1SEA
             // 
-            this.buttonDone.ForeColor = System.Drawing.Color.Black;
-            this.buttonDone.Location = new System.Drawing.Point(559, 226);
-            this.buttonDone.Name = "buttonDone";
-            this.buttonDone.Size = new System.Drawing.Size(229, 44);
-            this.buttonDone.TabIndex = 3;
-            this.buttonDone.Text = "Выполнить";
-            this.buttonDone.UseVisualStyleBackColor = true;
-            this.buttonDone.Click += new System.EventHandler(this.buttonDone_Click);
+            this.textBox1SEA.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.textBox1SEA.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1SEA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1SEA.Enabled = false;
+            this.textBox1SEA.Location = new System.Drawing.Point(6, 21);
+            this.textBox1SEA.Name = "textBox1SEA";
+            this.textBox1SEA.ReadOnly = true;
+            this.textBox1SEA.Size = new System.Drawing.Size(100, 13);
+            this.textBox1SEA.TabIndex = 2;
+            this.textBox1SEA.Text = "Результат:";
+            this.textBox1SEA.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // buttonWhat
+            // textBoxRes_SEA
             // 
-            this.buttonWhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonWhat.Location = new System.Drawing.Point(494, 226);
-            this.buttonWhat.Name = "buttonWhat";
-            this.buttonWhat.Size = new System.Drawing.Size(65, 44);
-            this.buttonWhat.TabIndex = 4;
-            this.buttonWhat.Text = "?";
-            this.buttonWhat.UseVisualStyleBackColor = true;
-            this.buttonWhat.Click += new System.EventHandler(this.buttonWhat_Click);
+            this.textBoxRes_SEA.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxRes_SEA.Location = new System.Drawing.Point(6, 47);
+            this.textBoxRes_SEA.Name = "textBoxRes_SEA";
+            this.textBoxRes_SEA.ReadOnly = true;
+            this.textBoxRes_SEA.Size = new System.Drawing.Size(216, 20);
+            this.textBoxRes_SEA.TabIndex = 0;
             // 
-            // textBox
+            // buttonDone_SEA
             // 
-            this.textBox.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.textBox.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox.Enabled = false;
-            this.textBox.Location = new System.Drawing.Point(6, 22);
-            this.textBox.Name = "textBox";
-            this.textBox.ReadOnly = true;
-            this.textBox.Size = new System.Drawing.Size(100, 13);
-            this.textBox.TabIndex = 1;
-            this.textBox.Text = "Переменная Х:";
+            this.buttonDone_SEA.ForeColor = System.Drawing.Color.Black;
+            this.buttonDone_SEA.Location = new System.Drawing.Point(539, 132);
+            this.buttonDone_SEA.Name = "buttonDone_SEA";
+            this.buttonDone_SEA.Size = new System.Drawing.Size(169, 44);
+            this.buttonDone_SEA.TabIndex = 3;
+            this.buttonDone_SEA.Text = "Выполнить";
+            this.buttonDone_SEA.UseVisualStyleBackColor = true;
+            this.buttonDone_SEA.Click += new System.EventHandler(this.buttonDone_Click);
             // 
-            // textBox1
+            // buttonWhat_SEA
             // 
-            this.textBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(6, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 13);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Результат:";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.buttonWhat_SEA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonWhat_SEA.Location = new System.Drawing.Point(488, 132);
+            this.buttonWhat_SEA.Name = "buttonWhat_SEA";
+            this.buttonWhat_SEA.Size = new System.Drawing.Size(45, 44);
+            this.buttonWhat_SEA.TabIndex = 4;
+            this.buttonWhat_SEA.Text = "?";
+            this.buttonWhat_SEA.UseVisualStyleBackColor = true;
+            this.buttonWhat_SEA.Click += new System.EventHandler(this.buttonWhat_Click);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 316);
-            this.Controls.Add(this.buttonWhat);
-            this.Controls.Add(this.buttonDone);
-            this.Controls.Add(this.groupBoxRess);
-            this.Controls.Add(this.groupBoxVar);
-            this.Controls.Add(this.groupBoxTaskk);
+            this.ClientSize = new System.Drawing.Size(720, 196);
+            this.Controls.Add(this.buttonWhat_SEA);
+            this.Controls.Add(this.buttonDone_SEA);
+            this.Controls.Add(this.groupBoxRess_SEA);
+            this.Controls.Add(this.groupBoxVar_SEA);
+            this.Controls.Add(this.groupBoxTask_SEA);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MinimizeBox = false;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6  | Task 0 | Вариант 21 | Шадрин Е.А";
-            this.groupBoxTaskk.ResumeLayout(false);
-            this.groupBoxTaskk.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBoxVar.ResumeLayout(false);
-            this.groupBoxVar.PerformLayout();
-            this.groupBoxRess.ResumeLayout(false);
-            this.groupBoxRess.PerformLayout();
+            this.groupBoxTask_SEA.ResumeLayout(false);
+            this.groupBoxTask_SEA.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForm_SEA)).EndInit();
+            this.groupBoxVar_SEA.ResumeLayout(false);
+            this.groupBoxVar_SEA.PerformLayout();
+            this.groupBoxRess_SEA.ResumeLayout(false);
+            this.groupBoxRess_SEA.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBoxTaskk;
-        private System.Windows.Forms.TextBox textBoxTask;
-        private System.Windows.Forms.GroupBox groupBoxVar;
-        private System.Windows.Forms.GroupBox groupBoxRess;
-        private System.Windows.Forms.TextBox textBoxRes;
-        private System.Windows.Forms.TextBox textBoxVarA;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button buttonDone;
-        private System.Windows.Forms.TextBox textBox;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button buttonWhat;
+        private System.Windows.Forms.GroupBox groupBoxTask_SEA;
+        private System.Windows.Forms.TextBox textBoxTask_SEA;
+        private System.Windows.Forms.GroupBox groupBoxVar_SEA;
+        private System.Windows.Forms.GroupBox groupBoxRess_SEA;
+        private System.Windows.Forms.TextBox textBoxRes_SEA;
+        private System.Windows.Forms.TextBox textBoxVarA_SEA;
+        private System.Windows.Forms.PictureBox pictureBoxForm_SEA;
+        private System.Windows.Forms.Button buttonDone_SEA;
+        private System.Windows.Forms.TextBox textBoxSEA;
+        private System.Windows.Forms.TextBox textBox1SEA;
+        private System.Windows.Forms.Button buttonWhat_SEA;
     }
 }
 

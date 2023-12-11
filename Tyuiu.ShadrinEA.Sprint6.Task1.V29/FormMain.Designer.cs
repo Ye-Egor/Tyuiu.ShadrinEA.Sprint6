@@ -40,8 +40,8 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task1.V29
             this.labelResult_SEA = new System.Windows.Forms.Label();
             this.textBoxResult_SEA = new System.Windows.Forms.TextBox();
             this.groupBoxCondition_SEA = new System.Windows.Forms.GroupBox();
-            this.textBoxTask_SEA = new System.Windows.Forms.TextBox();
             this.pictureBoxFormula1_SEA = new System.Windows.Forms.PictureBox();
+            this.textBoxTask_SEA = new System.Windows.Forms.TextBox();
             this.groupBoxInPut_SEA.SuspendLayout();
             this.groupBoxResult_SEA.SuspendLayout();
             this.groupBoxCondition_SEA.SuspendLayout();
@@ -91,6 +91,7 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task1.V29
             this.labelVarStop_SEA.Size = new System.Drawing.Size(69, 13);
             this.labelVarStop_SEA.TabIndex = 1;
             this.labelVarStop_SEA.Text = "Конец шага:";
+          
             // 
             // labelVarStart_SEA
             // 
@@ -159,17 +160,6 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task1.V29
             this.groupBoxCondition_SEA.TabStop = false;
             this.groupBoxCondition_SEA.Text = "Условие";
             // 
-            // textBoxTask_SEA
-            // 
-            this.textBoxTask_SEA.Location = new System.Drawing.Point(7, 20);
-            this.textBoxTask_SEA.Multiline = true;
-            this.textBoxTask_SEA.Name = "textBoxTask_SEA";
-            this.textBoxTask_SEA.ReadOnly = true;
-            this.textBoxTask_SEA.Size = new System.Drawing.Size(434, 203);
-            this.textBoxTask_SEA.TabIndex = 0;
-            this.textBoxTask_SEA.Text = "Протабулировать функцию F(x) на заданном диапазоне.\r\nРезультат вывести в виде таб" +
-    "лицы. При делении на ноль вернуть значение 0.";
-            // 
             // pictureBoxFormula1_SEA
             // 
             this.pictureBoxFormula1_SEA.BackColor = System.Drawing.SystemColors.Control;
@@ -180,6 +170,17 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task1.V29
             this.pictureBoxFormula1_SEA.Size = new System.Drawing.Size(326, 41);
             this.pictureBoxFormula1_SEA.TabIndex = 1;
             this.pictureBoxFormula1_SEA.TabStop = false;
+            // 
+            // textBoxTask_SEA
+            // 
+            this.textBoxTask_SEA.Location = new System.Drawing.Point(7, 20);
+            this.textBoxTask_SEA.Multiline = true;
+            this.textBoxTask_SEA.Name = "textBoxTask_SEA";
+            this.textBoxTask_SEA.ReadOnly = true;
+            this.textBoxTask_SEA.Size = new System.Drawing.Size(434, 203);
+            this.textBoxTask_SEA.TabIndex = 0;
+            this.textBoxTask_SEA.Text = "Протабулировать функцию F(x) на заданном диапазоне.\r\nРезультат вывести в виде таб" +
+    "лицы. При делении на ноль вернуть значение 0.";
             // 
             // FormMain_SEA
             // 

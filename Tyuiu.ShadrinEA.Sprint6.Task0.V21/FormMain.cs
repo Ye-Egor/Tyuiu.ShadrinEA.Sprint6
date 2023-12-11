@@ -27,7 +27,7 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task0.V21
             DataService ds = new DataService(); 
             try
             {
-                textBoxRes.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarA.Text)));
+                textBoxRes_SEA.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarA_SEA.Text)));
             }
             catch
             {
