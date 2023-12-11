@@ -11,13 +11,12 @@ using Tyuiu.ShadrinEA.Sprint6.Task2.V19.Lib;
 
 namespace Tyuiu.ShadrinEA.Sprint6.Task2.V19
 {
-    public partial class FormMain_SEA : Form
+    public partial class FormMain : Form
     {
-        public FormMain_SEA()
+        public FormMain()
         {
             InitializeComponent();
         }
-
         DataService ds = new DataService();
         private void buttonDone_SEA_Click(object sender, EventArgs e)
         {
@@ -31,14 +30,14 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task2.V19
                 valueArray = new double[len];
 
                 valueArray = ds.GetMassFunction(start, stop);
-                this.chartResult_SEA.Titles.Add("График функции");
-                this.chartResult_SEA.ChartAreas[0].AxisX.Title = "Ось X";
-                this.chartResult_SEA.ChartAreas[0].AxisY.Title = "Ось Y";
+                this.chartRes_SEA.Titles.Add("График функции");
+                this.chartRes_SEA.ChartAreas[0].AxisX.Title = "Ось X";
+                this.chartRes_SEA.ChartAreas[0].AxisY.Title = "Ось Y";
 
                 for (int i = 0; i < len; i++)
                 {
                     this.dataGridViewFunction_SEA.Rows.Add(Convert.ToString(start), Convert.ToString(valueArray[i]));
-                    this.chartResult_SEA.Series[0].Points.AddXY(start, valueArray[i]);
+                    this.chartRes_SEA.Series[0].Points.AddXY(start, valueArray[i]);
                     start++;
                 }
             }
@@ -47,7 +46,6 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task2.V19
                 MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-
         }
 
         private void buttonDone_SEA_MouseEnter(object sender, EventArgs e)
@@ -65,13 +63,10 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task2.V19
             buttonDone_SEA.BackColor = Color.SeaGreen;
         }
 
-       
 
-        private void buttonHelp_SEA_Click_1(object sender, EventArgs e)
+        private void buttonHelp_SEA_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Task2 выполнил студент группы ИСТНб-23-1 Шадрин Егор Андреевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-
-        
     }
 }

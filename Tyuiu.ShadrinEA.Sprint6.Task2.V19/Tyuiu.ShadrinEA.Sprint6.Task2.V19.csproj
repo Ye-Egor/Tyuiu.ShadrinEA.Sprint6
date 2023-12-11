@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CD202A21-215C-4EED-9902-C577A6968177}</ProjectGuid>
+    <ProjectGuid>{259F81EA-9277-4500-9462-DAF5D0208109}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Tyuiu.ShadrinEA.Sprint6.Task2.V19</RootNamespace>
     <AssemblyName>Tyuiu.ShadrinEA.Sprint6.Task2.V19</AssemblyName>
@@ -82,13 +82,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.ShadrinEA.Sprint6.Task2.V19.Lib\Tyuiu.ShadrinEA.Sprint6.Task2.V19.Lib.csproj">
-      <Project>{d1ccc672-8c22-4930-bc3f-359ff43d2255}</Project>
-      <Name>Tyuiu.ShadrinEA.Sprint6.Task2.V19.Lib</Name>
-    </ProjectReference>
+    <None Include="Resources\formula2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\formula2.png" />
+    <ProjectReference Include="..\Tyuiu.ShadrinEA.Sprint6.Task2.V19.Lib\Tyuiu.ShadrinEA.Sprint6.Task2.V19.Lib.csproj">
+      <Project>{c4e65011-1dc9-4194-9f26-cbbee9bceaad}</Project>
+      <Name>Tyuiu.ShadrinEA.Sprint6.Task2.V19.Lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

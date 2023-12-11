@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D1CCC672-8C22-4930-BC3F-359FF43D2255}</ProjectGuid>
+    <ProjectGuid>{C4E65011-1DC9-4194-9F26-CBBEE9BCEAAD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Tyuiu.ShadrinEA.Sprint6.Task2.V19.Lib</RootNamespace>

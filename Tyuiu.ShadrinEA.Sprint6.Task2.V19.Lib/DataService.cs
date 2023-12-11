@@ -19,10 +19,10 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task2.V19.Lib
             for (int x = startValue; x <= stopValue; x++)
             {
 
-                f = Math.Round(Math.Sin((double)x) / ((double)x +1.7) - Math.Cos((double)x) * (4 * (double)x) -6 , 2);
+                f = Math.Round(Math.Sin((double)x) / ((double)x + 1.7) - Math.Cos((double)x) * (4 * (double)x) - 6, 2);
                 valueArray[count] = f;
                 count++;
-                    
+
             }
             return valueArray;
         }

@@ -32,6 +32,9 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task6.V20
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelTask_SEA = new System.Windows.Forms.Panel();
+            this.buttonDone_SEA = new System.Windows.Forms.Button();
+            this.buttonHelp_SEA = new System.Windows.Forms.Button();
+            this.buttonOpenFile_SEA = new System.Windows.Forms.Button();
             this.groupBoxTask_SEA = new System.Windows.Forms.GroupBox();
             this.textBoxTask_SEA = new System.Windows.Forms.TextBox();
             this.panelInPut_SEA = new System.Windows.Forms.Panel();
@@ -43,9 +46,6 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task6.V20
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.openFileDialogOpen_SEA = new System.Windows.Forms.OpenFileDialog();
-            this.buttonDone_SEA = new System.Windows.Forms.Button();
-            this.buttonHelp_SEA = new System.Windows.Forms.Button();
-            this.buttonOpenFile_SEA = new System.Windows.Forms.Button();
             this.panelTask_SEA.SuspendLayout();
             this.groupBoxTask_SEA.SuspendLayout();
             this.panelInPut_SEA.SuspendLayout();
@@ -65,6 +65,43 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task6.V20
             this.panelTask_SEA.Name = "panelTask_SEA";
             this.panelTask_SEA.Size = new System.Drawing.Size(800, 135);
             this.panelTask_SEA.TabIndex = 0;
+            // 
+            // buttonDone_SEA
+            // 
+            this.buttonDone_SEA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonDone_SEA.BackgroundImage")));
+            this.buttonDone_SEA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonDone_SEA.Location = new System.Drawing.Point(64, 0);
+            this.buttonDone_SEA.Name = "buttonDone_SEA";
+            this.buttonDone_SEA.Size = new System.Drawing.Size(51, 47);
+            this.buttonDone_SEA.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.buttonDone_SEA, "Выполнить программу.");
+            this.buttonDone_SEA.UseVisualStyleBackColor = true;
+            this.buttonDone_SEA.Click += new System.EventHandler(this.buttonDone_SEA_Click);
+            // 
+            // buttonHelp_SEA
+            // 
+            this.buttonHelp_SEA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonHelp_SEA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonHelp_SEA.BackgroundImage")));
+            this.buttonHelp_SEA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonHelp_SEA.Location = new System.Drawing.Point(745, 3);
+            this.buttonHelp_SEA.Name = "buttonHelp_SEA";
+            this.buttonHelp_SEA.Size = new System.Drawing.Size(51, 47);
+            this.buttonHelp_SEA.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.buttonHelp_SEA, "Сведение о програме.");
+            this.buttonHelp_SEA.UseVisualStyleBackColor = true;
+            this.buttonHelp_SEA.Click += new System.EventHandler(this.buttonHelp_SEA_Click);
+            // 
+            // buttonOpenFile_SEA
+            // 
+            this.buttonOpenFile_SEA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOpenFile_SEA.BackgroundImage")));
+            this.buttonOpenFile_SEA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonOpenFile_SEA.Location = new System.Drawing.Point(7, 0);
+            this.buttonOpenFile_SEA.Name = "buttonOpenFile_SEA";
+            this.buttonOpenFile_SEA.Size = new System.Drawing.Size(51, 47);
+            this.buttonOpenFile_SEA.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.buttonOpenFile_SEA, "Открыть файл\r\nВыберите нужный файл для обработки.");
+            this.buttonOpenFile_SEA.UseVisualStyleBackColor = true;
+            this.buttonOpenFile_SEA.Click += new System.EventHandler(this.buttonOpenFile_SEA_Click);
             // 
             // groupBoxTask_SEA
             // 
@@ -170,43 +207,6 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task6.V20
             // openFileDialogOpen_SEA
             // 
             this.openFileDialogOpen_SEA.FileName = "openFileDialog1";
-            // 
-            // buttonDone_SEA
-            // 
-            this.buttonDone_SEA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonDone_SEA.BackgroundImage")));
-            this.buttonDone_SEA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonDone_SEA.Location = new System.Drawing.Point(64, 0);
-            this.buttonDone_SEA.Name = "buttonDone_SEA";
-            this.buttonDone_SEA.Size = new System.Drawing.Size(51, 47);
-            this.buttonDone_SEA.TabIndex = 3;
-            this.toolTip1.SetToolTip(this.buttonDone_SEA, "Выполнить программу.");
-            this.buttonDone_SEA.UseVisualStyleBackColor = true;
-            this.buttonDone_SEA.Click += new System.EventHandler(this.buttonDone_SEA_Click);
-            // 
-            // buttonHelp_SEA
-            // 
-            this.buttonHelp_SEA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonHelp_SEA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonHelp_SEA.BackgroundImage")));
-            this.buttonHelp_SEA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonHelp_SEA.Location = new System.Drawing.Point(745, 3);
-            this.buttonHelp_SEA.Name = "buttonHelp_SEA";
-            this.buttonHelp_SEA.Size = new System.Drawing.Size(51, 47);
-            this.buttonHelp_SEA.TabIndex = 2;
-            this.toolTip1.SetToolTip(this.buttonHelp_SEA, "Сведение о програме.");
-            this.buttonHelp_SEA.UseVisualStyleBackColor = true;
-            this.buttonHelp_SEA.Click += new System.EventHandler(this.buttonHelp_SEA_Click);
-            // 
-            // buttonOpenFile_SEA
-            // 
-            this.buttonOpenFile_SEA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOpenFile_SEA.BackgroundImage")));
-            this.buttonOpenFile_SEA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonOpenFile_SEA.Location = new System.Drawing.Point(7, 0);
-            this.buttonOpenFile_SEA.Name = "buttonOpenFile_SEA";
-            this.buttonOpenFile_SEA.Size = new System.Drawing.Size(51, 47);
-            this.buttonOpenFile_SEA.TabIndex = 1;
-            this.toolTip1.SetToolTip(this.buttonOpenFile_SEA, "Открыть файл\r\nВыберите нужный файл для обработки.");
-            this.buttonOpenFile_SEA.UseVisualStyleBackColor = true;
-            this.buttonOpenFile_SEA.Click += new System.EventHandler(this.buttonOpenFile_SEA_Click);
             // 
             // FormMain
             // 
