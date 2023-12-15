@@ -17,13 +17,13 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task3.V27.Lib
             int[] kal = new int[matrix.GetLength(0)];
             for (int i = 0; i < matrix.GetLength(1); i++)
             {
-                kal[i] = matrix[i, 4];
+                kal[i] = matrix[i, 3];
             }
             Array.Sort(kal);
 
             for (int i = 0; i < matrix.GetLength(1); i++)
             {
-                matrix[i, 4] = kal[i];
+                matrix[i, 3] = kal[i];
             }
             return matrix;
 
