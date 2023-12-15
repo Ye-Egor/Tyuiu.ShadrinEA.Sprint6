@@ -228,7 +228,7 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task7.V6
             this.Controls.Add(this.panelButton_SEA);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Спринт 6  | Task 7 | Вариант 6 | Шадрин Е.А";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.panelButton_SEA.ResumeLayout(false);
             this.groupBoxTas_SEA.ResumeLayout(false);

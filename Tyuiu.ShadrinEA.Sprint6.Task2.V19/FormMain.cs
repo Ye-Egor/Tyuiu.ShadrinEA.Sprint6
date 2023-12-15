@@ -68,5 +68,10 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task2.V19
         {
             MessageBox.Show("Task2 выполнил студент группы ИСТНб-23-1 Шадрин Егор Андреевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void textBoxStart_SEA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

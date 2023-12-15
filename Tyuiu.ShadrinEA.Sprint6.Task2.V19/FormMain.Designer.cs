@@ -29,13 +29,14 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task2.V19
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBoxTask_SEA = new System.Windows.Forms.GroupBox();
-            this.groupBoxRes_SEA = new System.Windows.Forms.GroupBox();
             this.textBoxTask_SEA = new System.Windows.Forms.TextBox();
-            this.pictureBoxForm_SEA = new System.Windows.Forms.PictureBox();
+            this.groupBoxRes_SEA = new System.Windows.Forms.GroupBox();
+            this.chartRes_SEA = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.dataGridViewFunction_SEA = new System.Windows.Forms.DataGridView();
             this.groupBoxInput_SEA = new System.Windows.Forms.GroupBox();
             this.textBoxS_SEA = new System.Windows.Forms.Label();
             this.textBoxlSt_SEA = new System.Windows.Forms.Label();
@@ -43,14 +44,13 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task2.V19
             this.textBoxStart_SEA = new System.Windows.Forms.TextBox();
             this.buttonHelp_SEA = new System.Windows.Forms.Button();
             this.buttonDone_SEA = new System.Windows.Forms.Button();
-            this.dataGridViewFunction_SEA = new System.Windows.Forms.DataGridView();
-            this.chartRes_SEA = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.pictureBoxForm_SEA = new System.Windows.Forms.PictureBox();
             this.groupBoxTask_SEA.SuspendLayout();
             this.groupBoxRes_SEA.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForm_SEA)).BeginInit();
-            this.groupBoxInput_SEA.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_SEA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartRes_SEA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_SEA)).BeginInit();
+            this.groupBoxInput_SEA.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForm_SEA)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxTask_SEA
@@ -64,17 +64,6 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task2.V19
             this.groupBoxTask_SEA.TabStop = false;
             this.groupBoxTask_SEA.Text = "Усовие";
             // 
-            // groupBoxRes_SEA
-            // 
-            this.groupBoxRes_SEA.Controls.Add(this.chartRes_SEA);
-            this.groupBoxRes_SEA.Controls.Add(this.dataGridViewFunction_SEA);
-            this.groupBoxRes_SEA.Location = new System.Drawing.Point(364, 12);
-            this.groupBoxRes_SEA.Name = "groupBoxRes_SEA";
-            this.groupBoxRes_SEA.Size = new System.Drawing.Size(638, 264);
-            this.groupBoxRes_SEA.TabIndex = 1;
-            this.groupBoxRes_SEA.TabStop = false;
-            this.groupBoxRes_SEA.Text = "Вывоод данных";
-            // 
             // textBoxTask_SEA
             // 
             this.textBoxTask_SEA.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -87,15 +76,43 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task2.V19
             this.textBoxTask_SEA.Text = "Протабулировать функцию F(x) на заданном диапазоне.\r\nРезультат вывести в DataGrid" +
     "View и построить график функции.";
             // 
-            // pictureBoxForm_SEA
+            // groupBoxRes_SEA
             // 
-            this.pictureBoxForm_SEA.BackgroundImage = global::Tyuiu.ShadrinEA.Sprint6.Task2.V19.Properties.Resources.formula2;
-            this.pictureBoxForm_SEA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBoxForm_SEA.Location = new System.Drawing.Point(6, 61);
-            this.pictureBoxForm_SEA.Name = "pictureBoxForm_SEA";
-            this.pictureBoxForm_SEA.Size = new System.Drawing.Size(334, 119);
-            this.pictureBoxForm_SEA.TabIndex = 2;
-            this.pictureBoxForm_SEA.TabStop = false;
+            this.groupBoxRes_SEA.Controls.Add(this.chartRes_SEA);
+            this.groupBoxRes_SEA.Controls.Add(this.dataGridViewFunction_SEA);
+            this.groupBoxRes_SEA.Location = new System.Drawing.Point(364, 12);
+            this.groupBoxRes_SEA.Name = "groupBoxRes_SEA";
+            this.groupBoxRes_SEA.Size = new System.Drawing.Size(638, 264);
+            this.groupBoxRes_SEA.TabIndex = 1;
+            this.groupBoxRes_SEA.TabStop = false;
+            this.groupBoxRes_SEA.Text = "Вывоод данных";
+            // 
+            // chartRes_SEA
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chartRes_SEA.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartRes_SEA.Legends.Add(legend1);
+            this.chartRes_SEA.Location = new System.Drawing.Point(132, 19);
+            this.chartRes_SEA.Name = "chartRes_SEA";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartRes_SEA.Series.Add(series1);
+            this.chartRes_SEA.Size = new System.Drawing.Size(500, 239);
+            this.chartRes_SEA.TabIndex = 3;
+            this.chartRes_SEA.Text = "chart1";
+            // 
+            // dataGridViewFunction_SEA
+            // 
+            this.dataGridViewFunction_SEA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewFunction_SEA.ColumnHeadersVisible = false;
+            this.dataGridViewFunction_SEA.Location = new System.Drawing.Point(6, 19);
+            this.dataGridViewFunction_SEA.Name = "dataGridViewFunction_SEA";
+            this.dataGridViewFunction_SEA.RowHeadersVisible = false;
+            this.dataGridViewFunction_SEA.Size = new System.Drawing.Size(120, 239);
+            this.dataGridViewFunction_SEA.TabIndex = 2;
             // 
             // groupBoxInput_SEA
             // 
@@ -141,6 +158,7 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task2.V19
             this.textBoxStart_SEA.Name = "textBoxStart_SEA";
             this.textBoxStart_SEA.Size = new System.Drawing.Size(66, 20);
             this.textBoxStart_SEA.TabIndex = 2;
+            this.textBoxStart_SEA.TextChanged += new System.EventHandler(this.textBoxStart_SEA_TextChanged);
             // 
             // buttonHelp_SEA
             // 
@@ -164,32 +182,15 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task2.V19
             this.buttonDone_SEA.UseVisualStyleBackColor = false;
             this.buttonDone_SEA.Click += new System.EventHandler(this.buttonDone_SEA_Click);
             // 
-            // dataGridViewFunction_SEA
+            // pictureBoxForm_SEA
             // 
-            this.dataGridViewFunction_SEA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewFunction_SEA.ColumnHeadersVisible = false;
-            this.dataGridViewFunction_SEA.Location = new System.Drawing.Point(6, 19);
-            this.dataGridViewFunction_SEA.Name = "dataGridViewFunction_SEA";
-            this.dataGridViewFunction_SEA.RowHeadersVisible = false;
-            this.dataGridViewFunction_SEA.Size = new System.Drawing.Size(120, 239);
-            this.dataGridViewFunction_SEA.TabIndex = 2;
-            // 
-            // chartRes_SEA
-            // 
-            chartArea2.Name = "ChartArea1";
-            this.chartRes_SEA.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartRes_SEA.Legends.Add(legend2);
-            this.chartRes_SEA.Location = new System.Drawing.Point(132, 19);
-            this.chartRes_SEA.Name = "chartRes_SEA";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartRes_SEA.Series.Add(series2);
-            this.chartRes_SEA.Size = new System.Drawing.Size(500, 239);
-            this.chartRes_SEA.TabIndex = 3;
-            this.chartRes_SEA.Text = "chart1";
+            this.pictureBoxForm_SEA.BackgroundImage = global::Tyuiu.ShadrinEA.Sprint6.Task2.V19.Properties.Resources.formula2;
+            this.pictureBoxForm_SEA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBoxForm_SEA.Location = new System.Drawing.Point(6, 61);
+            this.pictureBoxForm_SEA.Name = "pictureBoxForm_SEA";
+            this.pictureBoxForm_SEA.Size = new System.Drawing.Size(334, 119);
+            this.pictureBoxForm_SEA.TabIndex = 2;
+            this.pictureBoxForm_SEA.TabStop = false;
             // 
             // FormMain
             // 
@@ -206,11 +207,11 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task2.V19
             this.groupBoxTask_SEA.ResumeLayout(false);
             this.groupBoxTask_SEA.PerformLayout();
             this.groupBoxRes_SEA.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForm_SEA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartRes_SEA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_SEA)).EndInit();
             this.groupBoxInput_SEA.ResumeLayout(false);
             this.groupBoxInput_SEA.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_SEA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartRes_SEA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForm_SEA)).EndInit();
             this.ResumeLayout(false);
 
         }
