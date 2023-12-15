@@ -21,7 +21,7 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task2.V19
         private void buttonDone_SEA_Click(object sender, EventArgs e)
         {
             try
-            {
+            { 
                 int start = Convert.ToInt32(textBoxStart_SEA.Text);
                 int stop = Convert.ToInt32(textBoxStop_SEA.Text);
                 int len = ds.GetMassFunction(start, stop).Length;
