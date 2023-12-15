@@ -30,7 +30,7 @@ namespace Tyuiu.ShadrinEA.Sprint6.Task6.V20
 
         private void buttonOpenFile_SEA_Click(object sender, EventArgs e)
         {
-            openFileDialogOpen_SEA.ShowDialog();
+            openFileDialogOpen_SEA.ShowDialog(); 
             openFilePath = openFileDialogOpen_SEA.FileName;
             textBoxInPut_SEA.Text = File.ReadAllText(openFilePath);
             groupBoxOutPut_SEA.Text = groupBoxOutPut_SEA.Text + " " + openFileDialogOpen_SEA.FileName;
